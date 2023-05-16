@@ -1,11 +1,11 @@
 import React from 'react'
 
-function InfosUsuario() {
+export function InfosUsuario({usuario}) {
 
   return (
     <>
-    <img src="https://picsum.photos/400/400?a=1 " alt="" />
-    <h4>Titulo do Video</h4>
+    {/* <img src="https://picsum.photos/400/400?a=1 " alt="" /> */}
+    <h4>Nome: {usuario.nome}</h4>
     </>
   )
 }
