@@ -3,6 +3,15 @@ import "./styles.css";
 import CardVideo from "./Componentes/CardVideos";
 
 export default function App() {
+  const newObj = {
+    titulo: `Guardioes da Galaxia`,
+    imagem: `https://img.olhardigital.com.br/wp-content/uploads/2023/05/guardioes-da-galaxia-3.jpg`,
+     
+  }
+
+  const usuario = {
+    nome: `Mario`
+  }
 
   return (
     <div>
@@ -25,14 +34,14 @@ export default function App() {
           </nav>
 
           <section className="painel-de-videos">
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
-           <CardVideo/>
+           <CardVideo newObj = {newObj} usuario = {usuario}/>
+           <CardVideo newObj = {newObj} usuario = {usuario}/>
+           <CardVideo newObj = {newObj} usuario = {usuario}/>
+           <CardVideo newObj = {newObj} usuario = {usuario}/>
+           <CardVideo newObj = {newObj} usuario = {usuario}/>
+           <CardVideo newObj = {newObj} usuario = {usuario}/>
+           <CardVideo newObj = {newObj} usuario = {usuario}/>
+           <CardVideo newObj = {newObj} usuario = {usuario}/>
           </section>
         </main>
 
